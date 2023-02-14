@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Lambda tests Mobile automation test suite" parallel="tests">
+    <test name="ServiceNow app - Android Mobile Automation" enabled="true">
+        <parameter name="buildName" value="Android Automation with ServiceNow app"/>
+        <parameter name="testName" value="ServiceNow App Tests"/>
+        <parameter name="app" value="lt://APP10160531401676375222905553"/>
+        <parameter name="platformName" value="ANDROID"/>
+        <parameter name="platformVersion" value="11"/>
+        <parameter name="deviceName" value="Galaxy Note20"/>
+        <classes>
+            <class name="io.github.mfaisalkhatri.tests.ServiceNowAppTests">
+                <methods>
+                    <include name="testLaunchDemoApp"/>
+                    <include name="testIncident"/>
+                </methods>
+            </class>
+        </classes>
+    </test> <!-- Test -->
+    <test name="ServiceNow app - Android Mobile Automation" enabled="false">
+        <parameter name="buildName" value="Android Automation with ServiceNow app"/>
+        <parameter name="testName" value="ServiceNow App Tests"/>
+        <parameter name="app" value="lt://APP10160531401676375222905553"/>
+        <parameter name="platformName" value="ANDROID"/>
+        <parameter name="platformVersion" value="12"/>
+        <parameter name="deviceName" value="Galaxy S21 5G"/>
+        <classes>
+            <class name="io.github.mfaisalkhatri.tests.ServiceNowAppTests">
+                <methods>
+                    <include name="testLaunchDemoApp"/>
+                    <include name="testIncident"/>
+                </methods>
+            </class>
+        </classes>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->
