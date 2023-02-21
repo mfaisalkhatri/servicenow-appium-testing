@@ -37,8 +37,7 @@ public class MainPage {
 
     public void createNewIncident (String shortDesc) {
         clickQuickActionsBtn ();
-        clickOpenAnIncidentOption ();
-        NewIncidentPage newIncidentPage = new NewIncidentPage (androidDriverManager);
+        NewIncidentPage newIncidentPage = clickOpenAnIncidentOption ();
         newIncidentPage.setCallerName ();
         newIncidentPage.enterShortDescription (shortDesc);
         newIncidentPage.clickSubmitBtn ();

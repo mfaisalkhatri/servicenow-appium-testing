@@ -28,21 +28,22 @@ public class NewIncidentPage {
             .findElement (AppiumBy.id ("com.servicenow.fulfiller:id/valueLayout"));
     }
 
-    private WebElement searchView () {
-        return androidDriverManager.getDriver ()
-            .findElement (AppiumBy.accessibilityId ("SearchView"));
-    }
-
     private void selectCallerName () {
         callerField ().click ();
         wait.until (ExpectedConditions.elementToBeClickable (AppiumBy.accessibilityId ("Abraham Lincoln")))
             .click ();
-
     }
 
     public void setCallerName () {
         selectCallerName ();
     }
+
+
+    private WebElement searchView () {
+        return androidDriverManager.getDriver ()
+            .findElement (AppiumBy.accessibilityId ("SearchView"));
+    }
+
 
     private WebElement shortDescriptionField () {
         return androidDriverManager.getDriver ()

@@ -71,13 +71,13 @@ public class LaunchPage {
             .getText ();
     }
 
-    private WebElement acknowledgeBtn () {
+    private WebElement allowBtn () {
         return androidDriverManager.getDriver ()
             .findElement (AppiumBy.id ("com.servicenow.fulfiller:id/positive_btn"));
     }
 
-    public void clickAcknowledgeBtn () {
-        acknowledgeBtn ().click ();
+    public void clickAllowBtn () {
+        allowBtn ().click ();
 
     }
 
@@ -88,8 +88,8 @@ public class LaunchPage {
 
     }
 
-    public MainPage acknowledgeWorkingStatement () {
-        clickAcknowledgeBtn ();
+    public MainPage acceptPrivacyStatement () {
+        clickAllowBtn ();
         return new MainPage (androidDriverManager);
     }
 }

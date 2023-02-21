@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Lambda tests Mobile automation test suite" parallel="tests">
-    <test name="ServiceNow app - Android Mobile Automation" enabled="true">
+    <test name="ServiceNow app tests on Galaxy Note20">
         <parameter name="buildName" value="Android Automation with ServiceNow app"/>
         <parameter name="testName" value="ServiceNow App Tests"/>
         <parameter name="app" value="lt://APP10160531401676375222905553"/>
@@ -17,7 +17,7 @@
             </class>
         </classes>
     </test> <!-- Test -->
-    <test name="ServiceNow app - Android Mobile Automation" enabled="false">
+    <test name="ServiceNow app tests on Galaxy S21 5G" enabled = "false">
         <parameter name="buildName" value="Android Automation with ServiceNow app"/>
         <parameter name="testName" value="ServiceNow App Tests"/>
         <parameter name="app" value="lt://APP10160531401676375222905553"/>

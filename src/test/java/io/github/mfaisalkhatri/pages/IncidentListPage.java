@@ -81,5 +81,4 @@ public class IncidentListPage {
             .get (1)
             .getText ();
     }
-
 }

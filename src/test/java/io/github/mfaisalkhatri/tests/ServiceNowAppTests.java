@@ -18,8 +18,7 @@ public class ServiceNowAppTests extends BaseTest {
     public void launchApp () {
         LaunchPage launchPage = new LaunchPage (androidDriverManager);
         launchPage.launchDemoApp ();
-        //        launchPage.acknowledgeWorkingStatement ();
-
+        launchPage.acceptPrivacyStatement ();
     }
 
     @Test
